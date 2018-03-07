@@ -1,0 +1,62 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(#3733c8, #2820a1);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#ec {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 1px solid #27208c;
+  border-radius: 1%;
+  width: 1024px;
+  height: 768px;
+}
+
+#ec-nav {
+  width: 100%;
+  color: white;
+}
+
+#ec-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#ec-summary {
+  flex: 1 0 auto;
+  color: white;
+  background-color: #202024;
+}
+
+#ec-activity {
+  flex: 1 0 auto;
+  color: white;
+  background-color: #202024;
+}
+
+#ec-nav-title {
+  color: white;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
