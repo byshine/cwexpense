@@ -60,12 +60,19 @@
                         <input id="ec-summary-descriptioninput" type="text" min="0.01" value="Description" required />   
                     </div>
                     
-                    <button type="submit">New Expense</button>
+                    <button type="submit" class="button-success">New Expense</button>
                 </form>
             </section>
 
             <section id="ec-activity">
-                activity
+                <div class="ec-activity-header">
+                    <h3 id="ec-activity-title">History</h2>
+                    <div class="ec-activity-inputwrapper">
+                        <label for="ec-summary-searchinput"><i class="material-icons">search</i></label>
+                        <input id="ec-activity-searchinput" type="text" value="search.. maybe?"/>
+                    </div>
+                </div>
+                <hr class="ec-activity-hr" />
             </section>
         </div>
 

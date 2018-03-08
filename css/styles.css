@@ -158,7 +158,7 @@ li + li a::before {
   border : none;
   padding: 0.5rem;
   font-size: 1.5rem;
-  min-width: 60%;
+  min-width: 70%;
   height: 4rem;
 }
 
@@ -175,4 +175,56 @@ li + li a::before {
 ::-webkit-calendar-picker-indicator {
   height: 50%;
   color: white;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+}
+
+.button-success {
+  color: white;
+  font-size: 1.5rem;
+  background-color: #1e43ff;
+  border: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+}
+
+.ec-activity-header {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+#ec-activity-title {
+  flex: 20 0 auto;
+  font-size: 3rem;
+  display: inline-block;
+}
+
+.ec-activity-inputwrapper {
+  flex: 1 0 auto;
+  display: inline-block;
+}
+
+#ec-activity-searchinput {
+  margin-left: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  border : none;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  min-width: 50%;
+}
+
+label[for="ec-summary-searchinput"] i {
+  font-size: 2rem;
+}
+
+.ec-activity-hr {
+  padding: 0;
+  margin: 0 1rem;
+  background-color: rgba(255,255,255,0.2);
+  border-color: rgba(0,0,0,0.4);
 }
