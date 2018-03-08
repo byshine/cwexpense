@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
     <!-- Yanone Font -->
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -36,7 +38,30 @@
 
         <div id="ec-wrapper">
             <section id="ec-summary">
-                summary
+                <hgroup>
+                    <h2 id="ec-summary-balance">$ 1,364</h2>
+                    <h3 id="ec-summary-title"><i class="material-icons">account_balance</i> Balance</h3>
+                </hgroup>
+
+                <form>
+
+                    <div class="ec-summary-inputwrapper">
+                        <label for="ec-summary-expenseinput"><i class="material-icons">attach_money</i></label>
+                        <input id="ec-summary-expenseinput type="number" min="0.01" step="0.01" max="100000000" value="0.00" required />
+                    </div>
+
+                    <div class="ec-summary-inputwrapper">
+                        <label for="ec-summary-dateinput"><i class="material-icons">date_range</i></label>
+                        <input id="ec-summary-dateinput" type="date" required />
+                    </div>
+                    
+                    <div class="ec-summary-inputwrapper">
+                        <label for="ec-summary-descriptioninput"><i class="material-icons">subject</i></label>
+                        <input id="ec-summary-descriptioninput" type="text" min="0.01" value="Description" required />   
+                    </div>
+                    
+                    <button type="submit">New Expense</button>
+                </form>
             </section>
 
             <section id="ec-activity">
