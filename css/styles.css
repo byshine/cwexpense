@@ -8,18 +8,30 @@
   box-sizing: inherit;
 }
 
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
 html {
   height: 100%;
   width: 100%;
 }
 
 body {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  min-height: 100%;
   background: linear-gradient(#3733c8, #2820a1);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
 }
 
 #ec {
@@ -35,6 +47,9 @@ body {
 #ec-nav {
   width: 100%;
   color: white;
+  background-color: #3921fe;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 #ec-wrapper {
@@ -52,11 +67,57 @@ body {
 #ec-activity {
   flex: 1 0 auto;
   color: white;
-  background-color: #202024;
+  background-color: #222126;
+}
+
+#ec-nav hgroup {
+ flex: 3 0 auto;
 }
 
 #ec-nav-title {
+  padding: 0.7rem;
+  letter-spacing: 0.1rem;
   color: white;
-  font-size: 1rem;
+  font-size: 2rem;
   margin-left: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#ec-nav-subtitle {
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 0.05rem;
+  font-style: italic;
+  text-decoration: underline;
+
+}
+
+#ec-nav-list {
+  flex: 1 0 auto;
+  text-align: right;
+  list-style-type: none;
+  line-height: 1.7rem;
+  margin-right: 1rem;
+}
+
+#ec-nav-list li {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+
+}
+
+li + li a {
+  margin-left: 0.5rem;
+}
+
+li + li a::before {
+  content: "|";
+  margin-right: 0.5rem;
+}
+
+#ec-nav-list li a {
+  color: white;
+  text-decoration: none;
 }
