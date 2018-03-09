@@ -146,12 +146,14 @@ li + li a::before {
 }
 
 #ec-summary-balance {
-  font-size: 5rem;
+  font-size: 3rem;
   margin-top: 4rem;
+  padding: 0.5rem;
 }
 
 #ec-summary-title{
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
 }
 
 .ec-summary-inputwrapper {
@@ -207,6 +209,15 @@ button {
   flex-flow: row wrap;
   margin-top: 1rem;
   padding: 1rem;
+}
+
+#ec-activity-filterbutton {
+  border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
 }
 
 #ec-activity-title {
