@@ -293,4 +293,8 @@ label[for="ec-summary-searchinput"] i {
   #ec-summary-submitbutton {
     margin-bottom: 2rem !important;
   }
+
+  #ec-activity-tablewrapper {
+    height: 300px;
+  }
 }
