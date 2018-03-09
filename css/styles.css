@@ -28,6 +28,18 @@ h1, h2, h3, h4, h5, hgroup {
   margin: 0;
 }
 
+.color-orange {
+  color: orange;
+}
+
+.color-green {
+  color: green;
+}
+
+.color-red {
+  color: red;
+}
+
 .clearfix::after {
   content: " ";
   display: block;
@@ -198,7 +210,7 @@ button {
 }
 
 #ec-activity-title {
-  flex: 20 0 auto;
+  flex: 1000 0 auto;
   font-size: 3rem;
   display: inline-block;
 }
@@ -227,4 +239,28 @@ label[for="ec-summary-searchinput"] i {
   margin: 0 1rem;
   background-color: rgba(255,255,255,0.2);
   border-color: rgba(0,0,0,0.4);
+}
+
+#ec-activity-tablewrapper {
+  height: 600px;
+  overflow: auto;
+}
+
+#ec-activity-table {
+  min-width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+
+}
+
+#ec-activity-table>thead>tr>th {
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  width: 33%;
+  padding-bottom: 1rem;
+}
+
+#ec-activity-table>tbody>tr>td {
+  padding: 0.3rem;
+  font-size: 1.2rem;
 }

@@ -47,7 +47,7 @@
 
                     <div class="ec-summary-inputwrapper">
                         <label for="ec-summary-expenseinput"><i class="material-icons">attach_money</i></label>
-                        <input id="ec-summary-expenseinput type="number" min="0.01" step="0.01" max="100000000" value="0.00" required />
+                        <input id="ec-summary-expenseinput" type="number" min="0.01" placeholder="0.00" required />
                     </div>
 
                     <div class="ec-summary-inputwrapper">
@@ -57,10 +57,10 @@
                     
                     <div class="ec-summary-inputwrapper">
                         <label for="ec-summary-descriptioninput"><i class="material-icons">subject</i></label>
-                        <input id="ec-summary-descriptioninput" type="text" min="0.01" value="Description" required />   
+                        <input id="ec-summary-descriptioninput" type="text" min="0.01" placeholder="Description" required />   
                     </div>
                     
-                    <button type="submit" class="button-success">New Expense</button>
+                    <button id="ec-summary-submitbutton" type="submit" class="button-success">New Expense</button>
                 </form>
             </section>
 
@@ -69,10 +69,28 @@
                     <h3 id="ec-activity-title">History</h2>
                     <div class="ec-activity-inputwrapper">
                         <label for="ec-summary-searchinput"><i class="material-icons">search</i></label>
-                        <input id="ec-activity-searchinput" type="text" value="search.. maybe?"/>
+                        <input id="ec-activity-searchinput" type="text" placeholder="search.. maybe?"/>
                     </div>
                 </div>
                 <hr class="ec-activity-hr" />
+                <div id="ec-activity-tablewrapper">
+                    <table id="ec-activity-table">
+                        <thead>
+                            <tr>
+                                <th class="color-orange">Description</th>
+                                <th class="color-green">Date</th>
+                                <th class="color-red">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Food</td>
+                                <td>11/12/2017</td>
+                                <td>13.64</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </div>
 
